@@ -1,0 +1,122 @@
+[
+    {
+        "id":0,
+      "questionsText": "Which of the following leads to premature death?",
+      "answerOptions": [
+        { "answerText": "Smoking", "isCorrect": false },
+        { "answerText": "Alcoholism", "isCorrect": false },
+        { "answerText": "Unhealthy food and exercise habits", "isCorrect": false },
+        { "answerText": "All of the above", "isCorrect": true }
+      ],
+      "success":0,
+      "note": "You know for a fact that all of these can kill you a lot earlier than nature has deemed. So it's about time you pull up your socks, drop the bottle, and pick up some healthy lifestyle changes."
+    },
+    {
+        "id":1,
+      "questionsText": "Your daily intake of water should be...",
+      "answerOptions": [
+        { "answerText": "21", "isCorrect": false },
+        { "answerText": "8 eight-ounce glasses (about 2 litres)", "isCorrect": true },
+        { "answerText": "more than 5 litres", "isCorrect": false },
+        { "answerText": "as and when you're thirsty", "isCorrect": false }
+      ],
+      "success":0,
+      "note": "Most scientific evidence still backs the 2-litres a day recommendation. The minimum limit increases slightly for men, and also in those who engage in strenuous exercise or physical exertion."
+    },
+    {
+        "id":2,
+      "questionsText": "Sports drinks and nutritious energy-bars are good for you.",
+      "answerOptions": [
+        { "answerText": "False", "isCorrect": true },
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "33", "isCorrect": false },
+        { "answerText": "34", "isCorrect": false }
+      ],
+      "success":0,
+      "note": "The majority of energy bars are actually just candy for grown-ups. Even the ones that claim nutrition value, besides tall claims, contain unspeakable amounts of sugar and additives - things you'd rather keep away from."
+    },
+    {
+        "id":3,
+      "questionsText": "When cooking meat",
+      "answerOptions": [
+        { "answerText": "skin it clean", "isCorrect": true },
+        { "answerText": "leave the skin on", "isCorrect": false },
+        { "answerText": "33", "isCorrect": false },
+        { "answerText": "34", "isCorrect": false }
+      ],
+      "success":0,
+      "note": "Health advisers recommend skinning meat clean before cooking it. As tempting as it may be, the skin on meats hides sticky, bad, artery-clogging fats. Make sure you trim the fat completely so you only consume the nutrients in the meat."
+    }, 
+     {
+        "id":4,
+      "questionsText": "To exercise well",
+      "answerOptions": [
+        { "answerText": "Warm-up before you start and after you end a session", "isCorrect": false },
+        { "answerText": "Walk for about 10 minutes", "isCorrect": false },
+        { "answerText": "Stop if you feel dizzy or nauseous", "isCorrect": false },
+        { "answerText": "All of the above", "isCorrect": true }
+      ],
+      "success":0,
+      "note": "'What kind' and 'How much' exercise you need depends on a variety of factors like age, health condition, and increasingly, on your wallet's stretching capabilities.'What kind' and 'How much' exercise you need depends on a variety of factors like age, health condition, and increasingly, on your wallet's stretching capabilities."
+    },
+    {
+        "id":5,
+      "questionsText": "Meditation is good because",
+      "answerOptions": [
+        { "answerText": "It helps you focus better", "isCorrect": false },
+        { "answerText": "Your health improves", "isCorrect": false },
+        { "answerText": "You can ease yourself of mental stressors", "isCorrect": false },
+        { "answerText": "All of the above benefits", "isCorrect": true }
+      ],
+      "success":0,
+      "note": "Meditation harmonizes your body, mind and soul. You don't have to necessarily learn complex techniques. Just sit up straight on the floor, assume a position of intense Meditation harmonizes your body, mind and soul. You don't have to necessarily learn complex techniques. Just sit up straight on the floor, assume a position of intense"
+    },
+    {
+        "id":6,
+      "questionsText": "Sports drinks and nutritious energy-bars are good for you.",
+      "answerOptions": [
+        { "answerText": "False", "isCorrect": true },
+        { "answerText": "True", "isCorrect": false },
+        { "answerText": "33", "isCorrect": false },
+        { "answerText": "34", "isCorrect": false }
+      ],
+      "success":0,
+      "note": "Energy drinks and nutrition bars often make big promises. But once you cut through the hype and look past the flashy packaging on energy products, chances are what you’re mostly getting is a stiff dose of sugar and caffeine."
+    },
+    {
+        "id":7,
+      "questionsText": "'Healthy snacks' during the day are okay.",
+      "answerOptions": [
+        { "answerText": "No", "isCorrect": true },
+        { "answerText": "Yes", "isCorrect": false },
+        { "answerText": "33", "isCorrect": false },
+        { "answerText": "34", "isCorrect": false }
+      ],
+      "success":0,
+      "note": "While small portions of low-cal, low-fat 'healthy' snacks like bagels, fat-free crisps etc are widely considered harmless, the problem is that it's hard to restrict yourself to 'small portions' all the time."
+    }, 
+     {
+        "id":8,
+      "questionsText": "Healthiest way to cook your food is by",
+      "answerOptions": [
+        { "answerText": "Boiling", "isCorrect": false },
+        { "answerText": "Steaming", "isCorrect": true },
+        { "answerText": "Grilling", "isCorrect": false },
+        { "answerText": "Frying", "isCorrect": false }
+      ],
+      "success":0,
+      "note": "While the most wholesome way to consume food is to eat it raw, cave-man cuisine is really not everybody's cuppa . Besides, not all food can be eaten raw. So the next best option is to steam it."
+    }, 
+    {
+       "id":9,
+     "questionsText": "How much sleep do adults each night?",
+     "answerOptions": [
+       { "answerText": "4-5 hours", "isCorrect": false },
+       { "answerText": "7-8 hours", "isCorrect": true },
+       { "answerText": "10-12 hours", "isCorrect": false },
+       { "answerText": "22-24 hours", "isCorrect": false }
+     ],
+     "success":0,
+     "note": "Sometimes, a minor illness is your body just craving your attention."
+   }
+  ]

@@ -1,0 +1,194 @@
+import React, { useState } from "react";
+import "../style/quiz.css";
+// import questionss from "../data/quiz.yml";
+import questions from "../data/quiz.json";
+
+
+function Quiz() {
+ 
+  const [currentqw, setcurrentqw] = useState(0);
+  const [showScore, setShowScore] = useState(false);
+  const [showNextQw, setShowNextQw] = useState(true);
+  const [score, setScore] = useState(0);
+  const [comment, setcomment] = useState("");
+  const [timer, settimer]= useState(Date) 
+  const [clicked, setclicked]= useState(0)
+
+
+  const startTimer=()=>{
+      console.log('1')
+      var time = new Date().getTime();
+      var date = new Date(time);
+      settimer(date)
+      console.log(timer)
+   
+ }
+ const stopTimer=()=>{
+  console.log('2')
+  var time = new Date().getTime();
+  var date = new Date(time);
+  const diffTime = Date.parse(date)-Date.parse(timer)
+  var seconds = diffTime/(60*60*24)
+  var sortseconds = seconds.toFixed(2);
+  alert(sortseconds)
+  settimer(sortseconds.toString())
+  console.log(timer)
+
+
+}
+
+ 
+//  const h = () => {
+//   if(props.time.h === 0){
+//     return '';
+//   }else {
+//     return <span>{(props.time.h >= 10)? props.time.h : "0"+ props.time.h}</span>;
+//   }
+// }
+ 
+  
+
+
+
+
+  const handleAnswerClick = (isCorrect, anstxt) => {
+    if (clicked === 0){
+        // setShowNextQw(true);
+    if (isCorrect === true) {
+    
+      setScore(score + 1);
+      document.getElementById(anstxt).style.backgroundColor="green"
+    }
+    else{
+      document.getElementById(anstxt).style.backgroundColor="red"
+    }
+  
+    if(questions[currentqw].id===9){
+      stopTimer();
+    }
+    setclicked(1)
+    }
+
+  
+
+   
+    document.getElementById('d').innerHTML=questions[currentqw].note
+    // document.getElementById('d').innerHTML="aaa"
+  };
+
+
+
+  const nextqw = () => {
+    const nextqw = currentqw + 1;
+    setcurrentqw(nextqw);
+    setclicked(0)
+    if (nextqw < questions.length) {
+      setcurrentqw(nextqw);
+    } 
+    else {
+      setShowScore(true); 
+      setScore((100/questions.length)*score)
+      if (score<7){
+        setcomment("you can do better, try again")
+      }
+      else{
+        setcomment("excellent!")
+      }
+    }
+    
+  };
+
+
+  const startQuiz = () =>{
+    setShowNextQw(false);
+    if(questions[currentqw].id===0){
+      startTimer(); 
+    }
+  }
+
+  // const check=()=>{
+  //    document.getElementById('ddd').innerHTML=questions[currentqw].answerOptions[0].answerText
+  //   console.log(questions[currentqw].answerOptions[0].answerText)
+  // }
+
+  return (
+    <div className="quiz-page">
+       {/* <Timer/> */}
+      <br />
+      {showScore ? (
+        <div>
+          {" "}
+          total question: {questions.length}<br/>
+          your score: {score}%<br/>
+          comment: {comment}<br/>
+          timer: {timer} seconds
+    
+        </div>
+      ) : (
+        <>
+          {showNextQw ? (
+            <div className="text">
+            <button className="question" onClick={()=>startQuiz()}>start quiz</button>
+            </div>
+          ) : (
+            <div className="text">
+              <div>
+                <div>
+                  question {currentqw + 1}/{questions.length}
+                </div>
+                <br />
+                <div>{questions[currentqw].questionsText}</div>
+                <div className="question">
+                  {questions[currentqw].answerOptions.map((answerOptions) => (
+                    <div key={answerOptions.answerText}>
+                      <div className="button">
+                      <button id={answerOptions.answerText} 
+                      // className="ui yellow button"
+                      // className="ui grey basic button"
+                        onClick={() =>
+                          handleAnswerClick(
+                            answerOptions.isCorrect,   
+                            answerOptions.answerText
+                          )
+                        }
+                      >
+                      {answerOptions.answerText}
+                      </button>
+                      </div>
+                      {/* <button  onClick={()=>handleAnswerClick(answerOptions.isCorrect)}>{answerOptions.answerText}</button> */}
+                    </div>
+                  ))}
+                </div>
+                {/* {questions[currentqw].note} */}
+                
+                <div  className="textquetion">
+                <div id="d"></div>
+             <div id="text">
+               <button className="ui yellow button" onClick={() => nextqw()}> next</button>
+             </div>
+           </div>
+              </div>
+            </div>
+          )}
+        </>
+      )}
+      <hr className="tmry"></hr>
+      {/* <div>
+       {h()}&nbsp;&nbsp;
+       <span>{(props.time.m >= 10)? props.time.m : "0"+ props.time.m}</span>&nbsp;:&nbsp;
+       <span>{(props.time.s >= 10)? props.time.s : "0"+ props.time.s}</span>&nbsp;:&nbsp;
+       <span>{(props.time.ms >= 10)? props.time.ms : "0"+ props.time.ms}</span>
+    </div> */}
+    
+    </div>
+  );
+}
+
+export default Quiz;
+
+
+
+
+
+
+

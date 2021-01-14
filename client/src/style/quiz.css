@@ -1,0 +1,94 @@
+.quiz-page {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5px;
+  margin-bottom: 13px;
+  padding-bottom: 40px;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: #fafafa;
+  box-shadow: 0 4px 60px rgba(114, 113, 113, 0.253);
+  border-radius: 3px;
+}
+
+.text {
+  /* text-align: center; */
+  margin-left: 3px;
+  margin-right: 3px;
+  display: inline;
+  font-size: 120% ;
+
+ 
+}
+
+.question {
+  /* margin: 25px; */
+  margin-bottom: 50px;
+  margin-top: 5px;
+  padding-right: 27%;
+  padding-left: 27%;
+  background-color: rgba(243, 243, 243, 0.568);
+  border-radius: 3px;
+  /* box-shadow: 0 4px 60px rgba(114, 113, 113, 0.164); */
+  margin-right: 2%;
+  padding: 20px;
+ 
+
+}
+.result{
+ size: 112%;
+ 
+}
+
+input[type="radio"] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 0.6%;
+  height: 0.6%;
+  padding: 4px;
+  margin-top: 10px;
+  margin-left: 35px;
+  /* background-color only for content */
+  /* background-clip: content-box; */
+  border: 2px solid #8f8f8f;
+  background-color: #ffffff;
+  border-radius: 50%;
+  
+}
+
+/*for checked radiobutton */
+input[type="radio"]:checked {
+  background-color: blue;
+ 
+}
+
+/*for centering radiobuttons */
+.flex {
+  display: flex;
+  align-items: center;
+  display: inline;
+
+}
+
+
+
+.quiz-text{
+    color:rgb(57, 38, 75);
+    padding-left:1%;
+    padding-right:1%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    /* margin-left: 5%; */
+   
+  }
+
+
+  .question-text{
+    color:rgb(97, 83, 109);
+    margin-bottom: 0%;
+
+  }

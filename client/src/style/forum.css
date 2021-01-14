@@ -1,0 +1,129 @@
+.forum-page {
+  margin: 1% 10% 0% 10%;
+  padding: 20px 5% 3% 5%;
+  box-shadow: 0 4px 60px rgba(114, 113, 113, 0.253);
+  border-radius: 3px;
+  min-height: 500px;
+  word-break: break-all;
+}
+
+.posts-text {
+  color: rgb(57, 38, 75);
+  padding-left: 2%;
+  padding-top: 1%;
+}
+
+.new-post {
+  margin:0px 28px 50px 28px;
+  word-break: break-all;
+}
+
+.hr {
+  border-top: 1px solid rgba(218, 225, 228, 0.418);
+}
+
+
+.avatar {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px 4px 10px 0%;
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.post-comments{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+
+
+
+
+.post-list{
+  margin-bottom: 18px;
+  /* padding: 25px; */
+  /* border-radius: 5px; */
+  border: 1px solid #e2e2e2;
+  background-color: #f6f6f6;
+}
+
+.post-title{
+  display: inline;
+   color: rgb(63, 30, 94);
+}
+
+
+.post-date{
+  display: inline;
+  color: gray;  
+  margin-left: 1%;
+}
+
+
+.post-body{
+ margin:1% 15% 0% 3%;
+ white-space: pre-line;
+}
+
+.forum-details{
+  background-color: rgb(235, 235, 235);
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+.post-comments{
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: 20px;
+  white-space: pre-line;
+  /* white-space: pre-wrap; */
+}
+
+.comment{
+  padding: 0px 40px 40px 40px;
+}
+
+.comment-text{
+  padding-left: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+ 
+}
+
+.tryyy{
+  display: flex; 
+}
+
+
+.hrr {
+  border-top: 1px solid rgba(218, 225, 228, 0.418);
+  width: 300%;
+}
+
+.posts-list{
+  margin: 8px;
+}
+
+
+.newpost-button{
+
+    text-align: center;
+    padding-top: 1%;
+    position: absolute;
+    right: 16%;
+
+}
+
+.post-list-body{
+  margin: 8px;
+}
+
+.forum{
+  display: flex
+}
